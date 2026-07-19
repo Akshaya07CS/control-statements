@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int units, bill;
+    printf("Enter the number of units consumed:");
+    scanf("%d", &units);
+    if (units >= 0 && units <= 100) {
+        bill = 0;
+    }
+    else if (units <= 200) {
+        bill = (units - 100) * 5;
+    }
+    else if (units > 200) {
+        bill = (units - 200) * 10 + (100 * 5);
+    }
+    else {
+        printf("Invalid input\n");
+    }
+
+    printf("Electricity Bill = Rs : %d\n", bill);
+    return 0;
+}
