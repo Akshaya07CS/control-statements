@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int number;
+    printf("Enter the number");
+    scanf("%d", &number);
+    if (number % 5 == 0 && number % 2 != 0) {
+        printf("Number is divisible by 5 and not an even number");
+    }
+    else if (number % 5 != 0 && number % 2 != 0) {
+        printf("Number is not divisible by 5 and not an even number");
+    }
+    else if (number % 5 != 0 && number % 2 == 0) {
+        printf("Number is not divisible by 5 and an even number");
+    }
+    else {
+        printf("Number is divisible by 5 and an even number");
+    }
+    return 0;
+}
